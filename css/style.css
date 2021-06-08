@@ -1,0 +1,1029 @@
+/* CSS element styles */
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,300italic,400italic,400,500,700,900,&display=swap|Nunito:light,regular,semi-bold,bold');
+
+}*/
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Rubik, sans-serif;
+  /*font-family: Nunito, sans-serif;*/
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.8);
+  background: rgba(255,149,126,1);
+  line-height: 1.5em;
+  margin: 4% 1.5%;
+}
+
+ /*saving colors for later */
+/*yellow
+background: rgba(243,235,77,1);
+
+green
+background: rgba(130,198,117,1);
+
+turqouise
+background: rgba(90,183,147,1);
+
+blue
+background: rgba(55,81,162,1);
+
+red
+background: rgba(237,35,41,1);*/
+
+
+
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 0;
+  border-bottom: solid 2px rgba(0, 0, 0, 0.8);;
+  padding-bottom: 0px;
+}
+
+a:hover {
+  color: rgba(256, 256, 256, 1);
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom: none;
+}
+
+
+/* saving the linear gradient background for later */
+/*a:hover {
+  background: linear-gradient(to right, midnightblue, royalblue);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: none;
+}*/
+
+nav {
+  z-index: 1000;
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "working goofing about";
+  grid-gap: 1em;
+  margin-right: 2%;
+  font-size: 1.1em;
+  font-weight: 400;
+  text-align: right;
+  grid-area: nav;
+}
+
+
+.working {
+  grid-area: working;
+}
+
+.goofing {
+  grid-area: goofing;
+}
+
+.about {
+  grid-area: about;
+}
+
+
+/* connecting written summary classes to grid areas of the same name */
+.sum-a { grid-area: sum-a; } .sum-b { grid-area: sum-b; } .sum-c { grid-area: sum-c; } .sum-d { grid-area: sum-d; } .sum-e { grid-area: sum-e; } .sum-f { grid-area: sum-f; } .sum-g { grid-area: sum-g; }
+
+/* connecting image classes to grid areas of the same name */
+.img-a { grid-area: img-a; } .img-b { grid-area: img-b; } .img-c { grid-area: img-c; } .img-d { grid-area: img-d; } .img-e { grid-area: img-e; } .img-f { grid-area: img-f; } .img-g { grid-area: img-g; } .img-h { grid-area: img-h; } .img-i { grid-area: img-i; } .img-j { grid-area: img-j; } .img-k { grid-area: img-k; } .img-l { grid-area: img-l; } .img-m { grid-area: img-m; } .img-n { grid-area: img-n; } .img-o { grid-area: img-o; } .img-p { grid-area: img-p; } .img-q { grid-area: img-q; } .img-r { grid-area: img-r; } .img-s { grid-area: img-s; } .img-t { grid-area: img-t; } .img-u { grid-area: img-u; } .img-v { grid-area: img-v; } .img-w { grid-area: img-w; } .img-x { grid-area: img-x; } .img-y { grid-area: img-y; } .img-z { grid-area: img-z; }
+
+/* connecting video classes to grid areas of the same name */
+.vid-a { grid-area: vid-a; } .vid-b { grid-area: vid-b; } .vid-c { grid-area: vid-c; } .vid-d { grid-area: vid-d; } .vid-e { grid-area: vid-e; } .vid-f { grid-area: vid-f; } .vid-g { grid-area: vid-g; } .vid-h { grid-area: vid-h; } .vid-i { grid-area: vid-i; } .vid-j { grid-area: vid-j; } .vid-k { grid-area: vid-k; } .vid-l { grid-area: vid-l; } .vid-m { grid-area: vid-m; } .vid-n { grid-area: vid-n; } .vid-o { grid-area: vid-o; } .vid-p { grid-area: vid-p; } .vid-q { grid-area: vid-q; } .vid-r { grid-area: vid-r; } .vid-s { grid-area: vid-s; } .vid-t { grid-area: vid-t; } .vid-u { grid-area: vid-u; }  .vid-v { grid-area: vid-v; } .vid-x { grid-area: vid-x; } .vid-y { grid-area: vid-y; } .vid-z { grid-area: vid-z; } .vid-aa { grid-area: vid-aa; } .vid-ab { grid-area: vid-ab; } .vid-ac { grid-area: vid-ac; } .vid-ad { grid-area: vid-ad; } .vid-ae { grid-area: vid-ae; } .vid-af { grid-area: vid-af; } .vid-ag { grid-area: vid-ag; } .vid-ah { grid-area: vid-ah; } .vid-ai { grid-area: vid-ai; } .vid-aj { grid-area: vid-aj; } .vid-ak { grid-area: vid-ak; } .vid-al { grid-area: vid-al; } .vid-am { grid-area: vid-am; } .vid-an { grid-area: vid-an; } .vid-ao { grid-area: vid-ao; } .vid-ap { grid-area: vid-ap; } .vid-aq { grid-area: vid-aq; } .vid-ar { grid-area: vid-ar; } .vid-at { grid-area: vid-at; } .vid-au { grid-area: vid-au; } .vid-av { grid-area: vid-av; } .vid-aw { grid-area: vid-aw; } .vid-ax { grid-area: vid-ax; } .vid-ay { grid-area: vid-ay; } .vid-az { grid-area: vid-az; } .vid-ba { grid-area: vid-ba; } .vid-bb { grid-area: vid-bb; } .vid-bc { grid-area: vid-bc; } .vid-bd { grid-area: vid-bd; } .vid-be { grid-area: vid-be; } .vid-bf { grid-area: vid-bf; } .vid-bg { grid-area: vid-bg; } .vid-bh { grid-area: vid-bh; } .vid-bi { grid-area: vid-bi; } .vid-bj { grid-area: vid-bj; } .vid-bk { grid-area: vid-bk; } .vid-bl { grid-area: vid-bl; } .vid-bm { grid-area: vid-bm; } .vid-bn { grid-area: vid-bn; } .vid-bo { grid-area: vid-bo; }
+
+
+header a, nav a {
+  border-bottom: none;
+}
+
+nav ul>a {
+  width: 100%;
+  display: inline-block;
+}
+
+nav li {
+  height: 0;
+  /*display: none;*/
+  /*place-self: flex-start auto;*/
+  /* set a fixed width on either this li element or on ul...also try percentages */
+  /*width: 100%;*/
+  font-size: 0.8em;
+  font-weight: 300;
+  line-height: 1.1em;
+  visibility: hidden;
+}
+
+
+nav ul:hover li {
+  height: auto;
+  display: inline-block;
+  visibility: visible;
+  background: rgba(256, 256, 256, 0.8);
+}
+
+.story {
+  grid-area: story;
+}
+
+header {
+ /* width: 100%;
+  height: 100%;
+  display: flex; */
+  /*place-self: center stretch;*/
+  font-weight: 900;
+  font-size: 3.2em;
+  text-align: left;
+  padding-top: 4%;
+  margin-left: 2%;
+  letter-spacing: -0.04em;
+  display: inline;
+  grid-area: head;
+}
+
+img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+h4 {
+  font-weight: 500;
+}
+
+p {
+  text-align: left;
+  margin: auto;
+  max-width: 33em;
+  font-family: Georgia, serif;
+}
+
+hr {
+  border: 0.5px dashed rgba(0, 0, 0, 0.8);
+  width: 50%;
+  margin: 1.5em auto;
+}
+
+/* moving the quotes of a blockquote left a smidge, so the text is all flush to the left  */
+blockquote {
+  text-indent: -0.8em;
+}
+
+
+section {
+  grid-area: main;
+}
+
+/*iframe {
+  play around with this a bit
+  width: 100%;
+  height: 82vh;
+  border-radius: 6px;
+}*/
+
+.video-container {
+  position: relative;
+  justify-content: center;
+  padding-bottom: 56.25%; /*16:9*/
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  color: rgba(256, 256, 256, 0.8);;
+  background-color: none;
+  grid-area: foot;
+  place-self: end;
+  margin-right: 1%;
+}
+
+blockquote {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "title"
+                       "para"
+}
+
+blockquote h4 {
+  grid-area: title;
+}
+
+blockquote p {
+  grid-area: para;
+}
+
+/* css grid classes for all pages, using a 12-column grid here */
+.gridz {
+  display: grid;
+  min-height: calc(100vh - 50px);
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 100px auto;
+  grid-gap: 1.5em;
+  align-content: space-between;
+  background-color: rgba(256,256,256,0.6);
+  border: 0.6em solid rgba(256, 256, 256, 0.8);;
+}
+
+.index {
+  grid-template-rows: 100px auto 20%;
+  grid-template-areas: "head  head  head  head  head  nav   nav   nav   nav   nav   nav   nav"
+                       ".     .     main  main  main  main  main  main  main  main  .     ."
+                       "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
+}
+
+.about-page {
+  grid-template-areas: "head  head  head  head  head  nav   nav   nav   nav   nav   nav   nav"
+                       ".     story story story story story story story story story story ."
+                       "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
+}
+
+
+.dropbox {
+  grid-template-areas: "head  head  head  head  head  nav   nav   nav   nav   nav   nav   nav"
+                       ".     in    in    in    in    in    in    in    in    in    in     ."
+                       ".     sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a ."
+                       "img-a img-a img-a img-a .     .     .     .     img-c img-c img-c img-c"
+                       "img-a img-a img-a img-a img-b img-b img-b img-b img-c img-c img-c img-c"
+                       "img-d img-d img-d img-d img-b img-b img-b img-b img-e img-e img-e img-e"
+                       "img-d img-d img-d img-d .     .     .     .     img-e img-e img-e img-e"
+                       ".     .     .     sum-b sum-b sum-b sum-b sum-b sum-b .     .     ."
+                       ".     vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a ."
+                       ".     vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b ."
+                       "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
+}
+
+.braintree {
+  grid-template-areas: "head  head  head  head  head  nav   nav   nav   nav   nav   nav   nav"
+                       ".     in    in    in    in    in    in    in    in    in    in     ."
+                       ".     sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a ."
+                       "img-a img-a img-a img-a img-a img-a img-b img-b img-b img-b img-b img-b"
+                       "img-c img-c img-c img-c img-d img-d img-d img-d img-e img-e img-e img-e"
+                       "img-f img-f img-f img-f img-f img-f img-f img-f img-g img-g img-g img-g"
+                       "img-h img-h img-h img-h img-h img-h img-i img-i img-i img-i img-i img-i"
+                       "img-j img-j img-j img-j img-j img-j img-k img-k img-k img-k img-k img-k"
+                       ".     .     .     sum-b sum-b sum-b sum-b sum-b sum-b .     .     ."
+                       "img-l img-l img-l img-l img-m img-m img-m img-m img-n img-n img-n img-n"
+                       "img-o img-o img-o img-o img-o blk-a blk-a blk-a blk-a blk-a blk-a blk-a"
+                       ".     .     .     sum-c sum-c sum-c sum-c sum-c sum-c .     .     ."
+                       "img-p img-p img-p img-p img-q img-q img-q img-q img-r img-r img-r img-r"
+                       ".     .     .     sum-d sum-d sum-d sum-d sum-d sum-d .     .     ."
+                       "img-s img-s img-s img-s img-s img-s img-s img-t img-t img-t img-t img-t"
+                       "img-u img-u img-u img-u img-u img-u img-u img-v img-v img-v img-v img-v"
+                       ".     .     .     sum-e sum-e sum-e sum-e sum-e sum-e .     .     ."
+                       ".     vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a ."
+                       ".     vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b ."
+                       "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
+}
+
+.bt-edu {
+  grid-template-areas: "head  head  head  head  head  nav   nav   nav   nav   nav   nav   nav"
+                       ".     in    in    in    in    in    in    in    in    in    in     ."
+                       ".     vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a ."
+                       ".     vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b ."
+                       ".     vid-c vid-c vid-c vid-c vid-c vid-c vid-c vid-c vid-c vid-c ."
+                       ".     vid-d vid-d vid-d vid-d vid-d vid-d vid-d vid-d vid-d vid-d ."
+                       ".     vid-e vid-e vid-e vid-e vid-e vid-e vid-e vid-e vid-e vid-e ."
+                       "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
+}
+
+.codeology {
+  grid-template-areas: "head  head  head  head  head  nav   nav   nav   nav   nav   nav   nav"
+                       ".     in    in    in    in    in    in    in    in    in    in     ."
+                       ".     vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a ."
+                       ".     sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a ."
+                       "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
+}
+
+.contest-of-champions {
+  grid-template-areas: "head  head  head  head  head  nav   nav   nav   nav   nav   nav   nav"
+                       ".     in    in    in    in    in    in    in    in    in    in     ."
+                       ".     img-a img-a img-a img-a img-a img-a img-a sum-a sum-a sum-a sum-a"
+                       "sum-b sum-b sum-b sum-b img-b img-b img-b img-b img-b img-b img-b img-b"
+                       ".     img-c img-c img-c img-c img-c sum-c sum-c sum-c sum-c sum-c ."
+                       ".     vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a ."
+                       "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
+}
+
+.impossible-foods {
+  grid-template-areas: "head  head  head  head  head  nav   nav   nav   nav   nav   nav   nav"
+                       ".     in    in    in    in    in    in    in    in    in    in     ."
+                       ".     sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a ."
+                       "img-a img-a img-a img-a img-b img-b img-b img-b img-c img-c img-c img-c"
+                       ".     sum-b sum-b sum-b sum-b sum-b sum-b sum-b sum-b sum-b sum-b ."
+                       ".     img-d img-d img-d img-d img-d img-d img-d img-d img-d img-d ."
+                       ".     img-e img-e img-f img-f img-g img-g img-h  img-h  img-i img-i ."
+                       "img-j img-j img-j img-j img-j img-j .     .     .     .     .     ."
+                       ".     .     sum-c sum-c sum-c sum-c sum-c sum-c sum-c sum-c .     ."
+                       ".     .     img-k img-k img-k img-k img-k img-k img-k img-k .     ."
+                       "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
+}
+
+.mario-sonic {
+  grid-template-areas: "head  head  head  head  head  nav   nav   nav   nav   nav   nav   nav"
+                       ".     in    in    in    in    in    in    in    in    in    in     ."
+                       ".     vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a ."
+                       ".     vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b vid-b ."
+                       "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
+}
+
+.ups {
+  grid-template-areas: "head  head  head  head  head  nav   nav   nav   nav   nav   nav   nav"
+                       ".     in    in    in    in    in    in    in    in    in    in     ."
+                       ".     .     sum-a sum-a sum-a sum-a sum-a sum-a sum-a sum-a .     ."
+                       "img-a img-a img-a img-a img-a img-a img-a img-a img-a img-b img-b img-b"
+                       ".     .     img-c img-c img-c img-c img-c img-c img-c img-c .     ."
+                       "img-d img-d img-d img-d img-d img-d .     .     .     .     .     ."
+                       ".     .     .     img-e img-e img-e img-e img-e img-e .     .     ."
+                       ".     .     .     .     .     .     img-f img-f img-f img-f img-f img-f"
+                       ".     .     sum-b sum-b sum-b sum-b sum-b sum-b sum-b sum-b .     ."
+                       ".     img-g img-g img-g img-g img-g img-g img-g img-h img-h img-h ."
+                       ".     .     sum-c sum-c sum-c sum-c sum-c sum-c sum-c sum-c .     ."
+                       ".     img-i img-i img-i img-i img-i img-i img-j img-j img-j .     ."
+                       ".     img-i img-i img-i img-i img-i img-i img-k img-k img-k .     ."
+                       "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
+}
+
+.d1f {
+  grid-template-areas: "head   head   head   head   head   nav    nav    nav    nav    nav    nav     nav"
+                       ".      in     in     in     in     in     in     in     in     in     in      ."
+                       ".      .      sum-a  sum-a  sum-a  sum-a  sum-a  sum-a  sum-a  sum-a  .       ."
+                       ".      vid-a  vid-a  vid-a  vid-a  vid-a  vid-a  vid-a  vid-a  vid-a  vid-a   ."
+                       ".      .      sum-b  sum-b  sum-b  sum-b  sum-b  sum-b  sum-b  sum-b  .       ."
+                       ".      vid-b  vid-b  vid-c  vid-c  vid-d  vid-d  vid-e  vid-e  vid-f  vid-f   ."
+                       ".      vid-g  vid-g  vid-h  vid-h  vid-i  vid-i  vid-j  vid-j  vid-k  vid-k   ."
+                       ".      vid-l  vid-l  vid-m  vid-m  vid-n  vid-n  vid-o  vid-o  vid-p  vid-p   ."
+                       ".      vid-q  vid-q  vid-r  vid-r  vid-s  vid-s  vid-t  vid-t  vid-u  vid-u   ."
+                       ".      vid-v  vid-v  vid-bp vid-bp vid-x  vid-x  vid-y  vid-y  vid-z  vid-z   ." /* no idea why, but these grid areas/classes didnt' work: vid-w vid-w */
+                       ".      vid-aa vid-aa vid-ab vid-ab vid-ac vid-ac vid-ad vid-ad vid-ae vid-ae  ."
+                       ".      vid-af vid-af vid-ag vid-ag vid-ah vid-ah vid-ai vid-ai vid-aj vid-aj  ."
+                       ".      vid-ak vid-ak vid-al vid-al vid-am vid-am vid-an vid-an vid-ao vid-ao  ."
+                       ".      vid-ap vid-ap vid-aq vid-aq vid-ar vid-ar vid-at vid-at vid-au vid-au  ." /* no idea why, but these grid areas/classes didnt' work: vid-as vid-as */
+                       ".      vid-av vid-av vid-aw vid-aw vid-ax vid-ax vid-ay vid-ay vid-az vid-az  ."
+                       ".      vid-ba vid-ba vid-bb vid-bb vid-bc vid-bc vid-bd vid-bd vid-be vid-be  ."
+                       ".      vid-bf vid-bf vid-bg vid-bg vid-bh vid-bh vid-bi vid-bi vid-bj vid-bj  ."
+                       ".      vid-bk vid-bk vid-bl vid-bl vid-bm vid-bm vid-bn vid-bn vid-bo vid-bo  ."
+                       "foot   foot   foot   foot   foot   foot   foot   foot   foot   foot   foot   foot";
+
+}
+
+.th-gifs {
+  grid-template-areas: "head  head  head  head  head  nav   nav   nav   nav   nav   nav   nav"
+                       ".     in    in    in    in    in    in    in    in    in    in     ."
+                       ".     img-a img-a img-a img-a img-a img-a img-a img-a img-a img-a ."
+                       ".     img-d img-d img-d img-d img-c img-c img-c img-c img-c img-c ."
+                       ".     img-e img-e img-e img-e img-c img-c img-c img-c img-c img-c ."
+                       ".     .     img-b img-b img-b img-b img-b img-b img-b img-b .     ."
+                       "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
+}
+
+.helium {
+  grid-template-areas: "head  head  head  head  head  nav   nav   nav   nav   nav   nav   nav"
+                       ".     in    in    in    in    in    in    in    in    in    in     ."
+                       "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
+}
+
+.malkovich {
+  grid-template-areas: "head  head  head  head  head  nav   nav   nav   nav   nav   nav   nav"
+                       ".     in    in    in    in    in    in    in    in    in    in     ."
+                       ".     img-f img-f img-f img-f img-c img-c img-c img-c img-c img-c ."
+                       ".     img-a img-a img-a img-a img-c img-c img-c img-c img-c img-c ."
+                       ".     img-b img-b img-b img-b img-c img-c img-c img-c img-c img-c ."
+                       ".     img-b img-b img-b img-b img-e img-e img-e img-d img-d img-d ."
+                       "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
+}
+
+.sfbaes {
+  grid-template-areas: "head  head  head  head  head  nav   nav   nav   nav   nav   nav   nav"
+                       ".     in    in    in    in    in    in    in    in    in    in     ."
+                       ".     vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a vid-a ."
+                       "foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot  foot";
+}
+
+
+.homepage-para {
+  font-size: 2.4em;
+  max-width: 18em;
+  line-height: 1em;
+  /*width: 25em;*/
+  margin: auto;
+}
+
+/* trying to use css grid (.grid) instead */
+/*.wrapper {*/
+  /*padding: 2em;*/
+  /*width: 90%;*/
+  /*margin: auto;*/
+/*  margin-top: 5%;*/
+  /*background-color: #FF957E;*/
+  /*min-height: calc(100vh - 150px);*/
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*justify-content: space-between;*/
+/*}*/
+
+.intro {
+  margin: auto;
+  grid-area: in;
+}
+
+.intro-title {
+  max-width: 11em;
+  margin: auto;
+  font-size: 3rem;
+  line-height: 1em;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: -.03em;
+  }
+
+.intro-head {
+  max-width: 20em;
+  text-align: left;
+  letter-spacing: -.002em;
+  font-size: 1.8rem;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.intro-body {
+  max-width: 30em;
+  padding-top: 0;
+  font-size: 1.2em;
+  /*font-family: 'Nunito', sans-serif;*/
+  text-align: left;
+}
+
+
+::selection {
+  color: red;
+  background: yellow;
+}
+
+/* code for medium, tablet-sized screens */
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 18px;
+    margin: 4% 1.5%;
+  }
+
+  header {
+    font-size: 2.19rem;
+    padding-top: 9%;
+    margin-left: 1.5%;
+}
+
+  nav {
+    margin-right: 1.5%;
+}
+
+  p {
+    max-width: 33em;
+  }
+
+  .intro-title {
+    max-width: 11em;
+    margin: auto;
+    font-size: 2.4em;
+    line-height: 1em;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: -.03em;
+  }
+
+  .intro-head {
+    max-width: 20em;
+    text-align: left;
+    font-size: 1.5em;
+    letter-spacing: -.002em;
+
+  }
+
+  .intro-body {
+    max-width: 25em;
+    font-size: 1.2em;
+    line-height: 1.4em;
+  }
+
+  .homepage-para {
+    font-size: 2em;
+    max-width: 15em;
+    line-height: 1.1em;
+  }
+
+/* css grid classes for all pages, using a 6-column grid here */
+  .gridz {
+    grid-template-columns: repeat(6, 1fr);
+    min-height: calc(100vh - 25px);
+    grid-template-rows: 100px auto;
+    grid-gap: 1.2em;
+  }
+
+  .index {
+    grid-template-rows: 15% auto 15%;
+    grid-template-areas: "head  head  nav   nav   nav   nav"
+                         "main  main  main  main  main  main"
+                         "foot  foot  foot  foot  foot  foot";
+  }
+
+  .about-page {
+    grid-template-areas: "head  head  nav   nav   nav   nav"
+                         ".     story story story story ."
+                         "foot  foot  foot  foot  foot  foot";
+    align-content: space-between;
+  }
+
+  .dropbox {
+    grid-template-areas: "head  head  nav   nav   nav   nav"
+                         "in    in    in    in    in    in"
+                         ".     sum-a sum-a sum-a sum-a ."
+                         "img-a img-a .     .     img-c img-c"
+                         "img-a img-a img-b img-b img-c img-c"
+                         "img-d img-d img-b img-b img-e img-e"
+                         "img-d img-d .     .     img-e img-e"
+                         ".     sum-b sum-b sum-b sum-b ."
+                         "vid-a vid-a vid-a vid-a vid-a vid-a"
+                         "vid-b vid-b vid-b vid-b vid-b vid-b"
+                         "foot  foot  foot  foot  foot  foot";
+  }
+
+  .braintree {
+    grid-template-areas: "head  head  nav   nav   nav   nav"
+                         "in    in    in    in    in    in"
+                         ".     sum-a sum-a sum-a sum-a ."
+                         "img-a img-a img-a img-b img-b img-b"
+                         "img-c img-c img-d img-d img-e img-e"
+                         "img-f img-f img-f img-f img-g img-g"
+                         "img-h img-h img-h img-i img-i img-i"
+                         "img-j img-j img-j img-k img-k img-k"
+                         ".     sum-b sum-b sum-b sum-b ."
+                         "img-l img-l img-m img-m img-n img-n"
+                         "img-o img-o img-o blk-a blk-a blk-a"
+                         ".     sum-c sum-c sum-c sum-c ."
+                         "img-p img-p img-q img-q img-r img-r"
+                         ".     sum-d sum-d sum-d sum-d ."
+                         "img-s img-s img-s img-s img-t img-t"
+                         "img-u img-u img-u img-u img-v img-v"
+                         ".     sum-e sum-e sum-e sum-e ."
+                         "vid-a vid-a vid-a vid-a vid-a vid-a"
+                         "vid-b vid-b vid-b vid-b vid-b vid-b"
+                         "foot  foot  foot  foot  foot  foot";
+  }
+
+  .bt-edu {
+    grid-template-areas: "head  head  nav   nav   nav   nav"
+                         "in    in    in    in    in    in"
+                         "vid-a vid-a vid-a vid-a vid-a vid-a"
+                         "vid-b vid-b vid-b vid-b vid-b vid-b"
+                         "vid-c vid-c vid-c vid-c vid-c vid-c"
+                         "vid-d vid-d vid-d vid-d vid-d vid-d"
+                         "vid-e vid-e vid-e vid-e vid-e vid-e"
+                         "foot  foot  foot  foot  foot  foot";
+  }
+
+  .codeology {
+    grid-template-areas: "head  head  nav   nav   nav   nav"
+                         "in    in    in    in    in    in"
+                         "vid-a vid-a vid-a vid-a vid-a vid-a"
+                         ".     sum-a sum-a sum-a sum-a ."
+                         "foot  foot  foot  foot  foot  foot";
+  }
+
+  .contest-of-champions {
+    grid-template-areas: "head  head  nav   nav   nav   nav"
+                         "in    in    in    in    in    in"
+                         "img-a img-a img-a img-a sum-a sum-a"
+                         "sum-b sum-b img-b img-b img-b img-b"
+                         "img-c img-c img-c sum-c sum-c sum-c"
+                         ".     vid-a vid-a vid-a vid-a ."
+                         "foot  foot  foot  foot  foot  foot";
+  }
+
+  .impossible-foods {
+    grid-template-areas: "head  head  nav   nav   nav   nav"
+                         "in    in    in    in    in    in"
+                         "sum-a sum-a sum-a sum-a sum-a sum-a"
+                         "img-a img-a img-b img-b img-c img-c"
+                         "sum-b sum-b sum-b sum-b sum-b sum-b"
+                         "img-d img-d img-d img-d img-d img-d"
+                         "img-e img-f img-g img-h  img-i ."
+                         "img-j img-j img-j .     .     ."
+                         "sum-c sum-c sum-c sum-c sum-c sum-c"
+                         ".     img-k img-k img-k img-k ."
+                         "foot  foot  foot  foot  foot  foot";
+  }
+
+  .mario-sonic {
+    grid-template-areas: "head  head  nav   nav   nav   nav"
+                         "in    in    in    in    in    in"
+                         "vid-a vid-a vid-a vid-a vid-a vid-a"
+                         "vid-b vid-b vid-b vid-b vid-b vid-b"
+                         "foot  foot  foot  foot  foot  foot";
+  }
+
+  .ups {
+    grid-template-areas: "head  head  nav   nav   nav   nav"
+                         "in    in    in    in    in    in"
+                         ".     sum-a sum-a sum-a sum-a ."
+                         "img-a img-a img-a img-a img-a img-b"
+                         ".     img-c img-c img-c img-c ."
+                         "img-d img-d img-d .     .     ."
+                         ".     .     img-e img-e img-e ."
+                         ".     .     .     img-f img-f img-f"
+                         ".     sum-b sum-b sum-b sum-b ."
+                         "img-g img-g img-g img-g img-h  img-h"
+                         ".     sum-c sum-c sum-c sum-c ."
+                         "img-i img-i img-i img-i img-j img-j"
+                         "img-i img-i img-i img-i img-k img-k"
+                         "foot  foot  foot  foot  foot  foot";
+  }
+
+  .d1f {
+    grid-template-areas: "head  head  nav   nav   nav   nav"
+                         "in    in    in    in    in    in"
+                         ".     vid-a vid-a vid-a vid-a ."
+                         ".     vid-b vid-b vid-b vid-b ."
+                         ".     vid-c vid-c vid-c vid-c ."
+                         ".     vid-d vid-d vid-d vid-d ."
+                         ".     vid-e vid-e vid-e vid-e ."
+                         "foot  foot  foot  foot  foot  foot";
+  }
+
+  .th-gifs {
+    grid-template-areas: "head  head  nav   nav   nav   nav"
+                         "in    in    in    in    in    in"
+                         ".     img-a img-a img-a img-a ."
+                         "img-d img-d img-d img-c img-c img-c"
+                         "img-e img-e img-e img-c img-c img-c"
+                         ".     img-b img-b img-b img-b ."
+                         "foot  foot  foot  foot  foot  foot";
+  }
+
+  .helium {
+    grid-template-areas: "head  head  nav   nav   nav   nav"
+                         "in    in    in    in    in    in"
+                         "foot  foot  foot  foot  foot  foot";
+
+  }
+
+  .malkovich {
+    grid-template-areas: "head  head  nav   nav   nav   nav"
+                         "in    in    in    in    in    in"
+                         "img-f img-f img-f img-c img-c img-c"
+                         "img-a img-a img-a img-c img-c img-c"
+                         "img-b img-b img-b img-c img-c img-c"
+                         "img-b img-b img-b img-e img-e img-d"
+                         "foot  foot  foot  foot  foot  foot";
+  }
+
+  .sfbaes {
+    grid-template-areas: "head  head  nav   nav   nav   nav"
+                         "in    in    in    in    in    in"
+                         ".     vid-a vid-a vid-a vid-a ."
+                         "foot  foot  foot  foot  foot  foot";
+  }
+
+  nav ul {
+    padding: 0;
+  }
+
+/* more code goes in here */
+
+ }
+
+/* code for small, phone-sized screens */
+ @media screen and (max-width: 560px) {
+
+  body {
+    font-size: 14px;
+    margin: 4% 1%;
+  }
+
+  header {
+    margin: 0 auto;
+    font-size: 3.1rem;
+    padding-top: 4%;
+  }
+
+  nav {
+    margin-right: 0;
+    display: block;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "working"
+                         "goofing"
+                         "about";
+    font-weight: 400;
+    text-align: center;
+  }
+
+  nav ul {
+    width: 55%;
+    margin: 3% auto;
+    font-size: 1.5em;
+    line-height: 1.4em;
+  }
+
+  nav ul>a {
+    display: block;
+  }
+
+  nav li>a {
+    display: inline-block;
+    margin: 1% auto;
+    font-size: 1em;
+    font-weight: 300;
+  }
+
+  p {
+    max-width: 33em;
+  }
+
+  .intro-title {
+    max-width: 11em;
+    margin: auto;
+    font-size: 2.4em;
+    line-height: 1em;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: -.03em;
+  }
+
+  .intro-head {
+    max-width: 20em;
+    text-align: left;
+    font-size: 1.5em;
+    letter-spacing: -.002em;
+
+  }
+
+  .intro-body {
+    max-width: 25em;
+    font-size: 1.2em;
+    line-height: 1.4em;
+  }
+
+  .homepage-para {
+    font-size: 1.5em;
+    max-width: 15em;
+    line-height: 1em;
+  }
+
+
+/* css grid classes for all pages, using a 3-column grid here */
+  .gridz {
+    grid-template-columns: repeat(3, 1fr);
+    min-height: calc(100vh - 10px);
+    grid-template-rows: 50px 50px auto;
+    grid-gap: 1em;
+  }
+
+  .index {
+  grid-template-areas: "head  head  head"
+                       "nav   nav   nav"
+                       "nav   nav   nav"
+                       "nav   nav   nav"
+                       "main  main  main"
+                       "foot  foot  foot";
+  }
+
+  .about-page {
+  grid-template-areas: "head  head  head"
+                       "nav   nav   nav"
+                       "nav   nav   nav"
+                       "nav   nav   nav"
+                       "story story story"
+                       "foot  foot  foot";
+  }
+
+  .dropbox {
+  grid-template-areas: "head  head  head"
+                       "nav   nav   nav"
+                       "nav   nav   nav"
+                       "nav   nav   nav"
+                       "in    in    in"
+                       "sum-a sum-a sum-a"
+                       "img-a img-a ."
+                       ".     img-b img-b"
+                       "img-c img-c ."
+                       ".     img-d img-d"
+                       "img-e img-e ."
+                       "sum-b sum-b sum-b"
+                       "vid-a vid-a vid-a"
+                       "vid-b vid-b vid-b"
+                       "foot  foot  foot";
+  }
+
+  .braintree {
+  grid-template-areas: "head  head  head"
+                       "nav   nav   nav"
+                       "nav   nav   nav"
+                       "nav   nav   nav"
+                       "in    in    in"
+                       "sum-a sum-a sum-a"
+                       "img-a img-a img-a"
+                       "img-b img-b img-b"
+                       "img-c img-c ."
+                       ".     img-d img-d"
+                       "img-e img-e ."
+                       "img-f img-f img-g"
+                       "img-h  img-h  ."
+                       ".     img-i img-i"
+                       "img-j img-j ."
+                       ".     img-k img-k"
+                       "sum-b sum-b sum-b"
+                       "img-l img-l ."
+                       ".     img-m img-m"
+                       "img-n img-n ."
+                       "img-o img-o img-o"
+                       "blk-a blk-a blk-a"
+                       "sum-c sum-c sum-c"
+                       "img-p img-p ."
+                       ".     img-q img-q"
+                       "img-r img-r ."
+                       "sum-d sum-d sum-d"
+                       "img-s img-s img-t"
+                       "img-u img-u img-v"
+                       "sum-e sum-e sum-e"
+                       "vid-a vid-a vid-a"
+                       "vid-b vid-b vid-b"
+                       "foot  foot  foot";
+  }
+
+  .bt-edu {
+  grid-template-areas: "head  head  head"
+                       "nav   nav   nav"
+                       "nav   nav   nav"
+                       "nav   nav   nav"
+                       "in    in    in"
+                       "vid-a vid-a vid-a"
+                       "vid-b vid-b vid-b"
+                       "vid-c vid-c vid-c"
+                       "vid-d vid-d vid-d"
+                       "vid-e vid-e vid-e"
+                       "foot  foot  foot";
+  }
+
+  .codeology {
+  grid-template-areas: "head  head  head"
+                       "nav   nav   nav"
+                       "nav   nav   nav"
+                       "nav   nav   nav"
+                       "in    in    in"
+                       "vid-a vid-a vid-a"
+                       "sum-a sum-a sum-a"
+                       "foot  foot  foot";
+  }
+
+  .contest-of-champions {
+  grid-template-areas: "head  head  head"
+                       "nav   nav   nav"
+                       "nav   nav   nav"
+                       "nav   nav   nav"
+                       "in    in    in"
+                       "sum-a sum-a sum-a"
+                       "img-a img-a img-a"
+                       "sum-b sum-b sum-b"
+                       "img-b img-b img-b"
+                       "sum-c sum-c sum-c"
+                       "img-c img-c img-c"
+                       "vid-a vid-a vid-a"
+                       "foot  foot  foot";
+  }
+
+  .impossible-foods {
+  grid-template-areas: "head  head  head"
+                       "nav   nav   nav"
+                       "nav   nav   nav"
+                       "nav   nav   nav"
+                       "in    in    in"
+                       ".     sum-a ."
+                       "img-a img-a ."
+                       ".     img-b img-b"
+                       "img-c img-c ."
+                       ".     sum-b ."
+                       "img-d img-d img-d"
+                       "img-e img-e ."
+                       ".     img-f img-f"
+                       "img-g img-g ."
+                       ".     img-h  img-h"
+                       "img-i img-i ."
+                       "img-j img-j img-j"
+                       ".     .     ."
+                       "sum-c sum-c sum-c"
+                       "img-k img-k img-k"
+                       "foot  foot  foot";
+  }
+
+  .mario-sonic {
+  grid-template-areas: "head  head  head"
+                       "nav   nav   nav"
+                       "nav   nav   nav"
+                       "nav   nav   nav"
+                       "in    in    in"
+                       "vid-a vid-a vid-a"
+                       "vid-b vid-b vid-b"
+                       "foot  foot  foot";
+  }
+
+  .ups {
+  grid-template-areas: "head  head  head"
+                       "nav   nav   nav"
+                       "nav   nav   nav"
+                       "nav   nav   nav"
+                       "in    in    in"
+                       ".     sum-a ."
+                       "img-a img-a img-b"
+                       "img-c img-c img-c"
+                       "img-d img-d img-d"
+                       "img-e img-e img-e"
+                       "img-f img-f img-f"
+                       ".     sum-b  ."
+                       "img-g img-g img-h"
+                       ".     sum-c  ."
+                       "img-i img-j img-k"
+                       "foot  foot  foot";
+  }
+
+  .d1f {
+    grid-template-areas: "head  head  head"
+                         "nav   nav   nav"
+                         "nav   nav   nav"
+                         "nav   nav   nav"
+                         "in    in    in"
+                         "vid-a vid-a vid-a"
+                         "vid-b vid-b vid-b"
+                         "vid-c vid-c vid-c"
+                         "vid-d vid-d vid-d"
+                         "vid-e vid-e vid-e"
+                         "foot  foot  foot";
+  }
+
+  .th-gifs {
+    grid-template-areas: "head  head  head"
+                         "nav   nav   nav"
+                         "nav   nav   nav"
+                         "nav   nav   nav"
+                         "in    in    in"
+                         "img-a img-a img-a"
+                         "img-d img-d ."
+                         ".     img-c img-c"
+                         "img-e img-e ."
+                         "img-b img-b img-b"
+                         "foot  foot  foot";
+  }
+
+  .helium {
+    grid-template-areas: "head  head  head"
+                         "nav   nav   nav"
+                         "nav   nav   nav"
+                         "nav   nav   nav"
+                         "in    in    in"
+                         "foot  foot  foot";
+    align-content: flex-start;
+  }
+
+  .malkovich {
+    grid-template-areas: "head  head  head"
+                         "nav   nav   nav"
+                         "nav   nav   nav"
+                         "nav   nav   nav"
+                         "in    in    in"
+                         "img-f img-f ."
+                         ".     img-c img-c"
+                         "img-a img-a ."
+                         ".     img-b img-b"
+                         "img-e img-e ."
+                         ".     img-d  img-d"
+                         "foot  foot  foot";
+  }
+
+  .sfbaes {
+    grid-template-areas: "head  head  head"
+                         "nav   nav   nav"
+                         "nav   nav   nav"
+                         "nav   nav   nav"
+                         "in    in    in"
+                         "vid-a vid-a vid-a"
+                         "foot  foot  foot";
+  }
+}
+
