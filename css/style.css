@@ -70,7 +70,7 @@ nav {
   width: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "projects empty about";
+  grid-template-areas: "empty projects about";
   grid-gap: 1em;
   margin-right: 2%;
   font-size: 1.1em;
@@ -80,13 +80,14 @@ nav {
 }
 
 
+.empty {
+  grid-area: empty;
+}
+
 .projects {
   grid-area: projects;
 }
 
-.goofing {
-  grid-area: goofing;
-}
 
 .about {
   grid-area: about;
@@ -728,8 +729,8 @@ blockquote p {
     margin-right: 0;
     display: block;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-areas: "projects"
-                         "empty"
+    grid-template-areas: "empty"
+                         "projects"
                          "about";
     font-weight: 400;
     text-align: center;
